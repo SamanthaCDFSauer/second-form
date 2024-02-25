@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page {
+    margin: auto;
+    width: 750px;
+}   
+
+h1 {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-top: 145px;
+}
+
+body {
+    background: #EFEFEF;
+}
+
+body::before {
+    content: '';
+    background: #535971;
+    width: 100%;
+    height: 436px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+form {
+    background: #FFFFFF;
+    border-radius: 20px 20px 0 0;
+    padding: 64px;
+    display: flex;
+    flex-direction: column;
+    gap: 31px;
+    margin: auto;
+}
+
+
+p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 30px;
+    color: #FFFFFF;
+    padding-top: 18px;
+    padding-bottom: 63px;
+}
+
+fieldset {
+    border: none;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;   
+    gap: 30px;
+}
+
+.fieldset-wrapper .full-name {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.fieldset-wrapper .full-name .input-wrapper {
+    width: 100%;
+}
+
+legend {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 24px;
+    line-height: 34px;
+    color: #535971;
+    border-bottom: 1px solid #E6E6F0;
+    width: 100%;
+    margin-bottom: 32px;
+}
+
+.mentoring-sessions {
+    font-size: 20px;
+}
+
+.mentoring-sessions-second {
+    margin-top: 16px;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #4E4958;
+    margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+    font-size: 12px;
+    line-height: 20px;
+    color: #C1BCCC;
+    margin-left: 6px;
+}
+
+.input-wrapper input {
+    border: 1px solid #535971;
+    border-radius: 8px;
+    height: 56px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #535971;
+}
+
+.mentoring-sessions span {
+    text-transform: uppercase;
+}
+
+footer {
+    background: #535971;
+    height: 160px;
+    border-radius: 0 0 20px 20px;
+    margin: auto auto 360px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 750px;
+}
+
+.button {
+    font-family: 'Staatliches', sans-serif;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #FF5374;
+    width: 608px;
+    height: 56px;
+    border: none;
+    border-radius: 20px;
+    margin: 52px 71px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #d84664;
+}
+
+.date-time label span {
+    text-transform: uppercase;
+    margin-left: 32px;
+}
+
+
+.date-time .fieldset-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+.date-time .fieldset-wrapper .time {
+    width: 290px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.date-time .input-wrapper {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+input:invalid {
+    border: 1px solid red;
+}
